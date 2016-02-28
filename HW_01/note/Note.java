@@ -11,7 +11,7 @@ public class Note {
         int n = 0;//
 
         String st,st1;
-        WriteNote noteOne = new WriteNote(50);
+        WriteNote noteOne = new WriteNote(3);
         Scanner in = new Scanner(System.in);
 
         while (n != 5) {
