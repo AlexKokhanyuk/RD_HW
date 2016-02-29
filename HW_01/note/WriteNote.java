@@ -15,13 +15,12 @@ public class WriteNote {
 
         if (n == (note.length - 1)) {
             noteTmp = new String[note.length];
-            for (int i = 0; i
-                    < note.length; i++) {
+            for (int i = 0; i< note.length; i++) {
                 noteTmp[i] = note[i];
             }
             note = null;
             note = new String[(noteTmp.length + 3)];
-            System.out.println(note.length);
+            //System.out.println(note.length);
             for (int i = 0; i
                     < noteTmp.length; i++) {
                 note[i] = noteTmp[i];
@@ -45,6 +44,23 @@ public class WriteNote {
                     n--;
                     sortNote();
                 }
+				//
+				 if (n < (note.length - 3)) {
+            noteTmp = new String[note.length];
+            for (int i = 0; i
+                    < note.length; i++) {
+                noteTmp[i] = note[i];
+            }
+            note = null;
+            note = new String[(noteTmp.length - 3)];
+            //System.out.println(note.length);
+            for (int i = 0; i< (noteTmp.length-3); i++) {
+                note[i] = noteTmp[i];
+            }
+            noteTmp = null;
+         //
+        }
+				
             } else {
                 System.out.println("Could not find a string");
             }
